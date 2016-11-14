@@ -1,7 +1,10 @@
 package com.example.root.myapplication.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -53,6 +56,18 @@ public class DeathActivity extends Activity {
 
         ListView listView=(ListView)findViewById(R.id.list);
         listView.setAdapter(new Death(list,this));
+        listView.setClickable(true);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent=new Intent(DeathActivity.this,PersonDetailsActivity.class);
+                Person p=list.get(i);
+                intent.putExtra("NAME",p.getName());
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

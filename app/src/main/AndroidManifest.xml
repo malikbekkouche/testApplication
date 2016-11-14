@@ -15,8 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.DeathActivity"></activity>
-        <activity android:name=".activities.MyListActivity"></activity>
+        <activity android:name=".activities.DeathActivity" />
+        <activity android:name=".activities.MyListActivity" />
+        <activity android:name=".activities.PersonDetailsActivity"></activity>
     </application>
 
 </manifest>

@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){ // crashes when click
         switch (item.getItemId()){
             case R.id.menu_item :
-                Intent intent=new Intent(MainActivity.this,MyListActivity.class);
+                Intent intent=new Intent(MainActivity.this,PersonDetailsActivity.class);
                 startActivity(intent);
                 return true;
         }

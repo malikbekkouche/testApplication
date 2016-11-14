@@ -57,4 +57,6 @@ public class Death extends BaseAdapter {
         imageView.setImageResource(t.getImage());
         return view;
     }
+
+
 }
