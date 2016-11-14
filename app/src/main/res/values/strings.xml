@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome">Welcome ! Please fill in you personal information</string>
+    <string name="fill">Name :</string>
+    <string name="calendarText">would like to pick a date ?</string>
+    <string name="send">Write down</string>
+    <string name="circo">circumstances of death :</string>
+    <string name="menu_list">show list</string>
+    <string name="help">Help</string>
+</resources>
